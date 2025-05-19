@@ -78,7 +78,7 @@
 <body>
   <div class="container py-5">
     <div class="profile-header mx-auto mb-4 col-md-8">
-      <img src="https://via.placeholder.com/120" alt="Profile" class="profile-pic">
+      <!-- <img src="https://via.placeholder.com/120" alt="Profile" class="profile-pic"> -->
       <div class="profile-name">Arnav Shrestha</div>
       <div class="profile-title">Junior Software Engineer | Developer & Designer</div>
       <p class="mt-3 text-muted">
@@ -107,12 +107,14 @@
     <div class="card-section col-md-8 mx-auto">
       <div class="section-title" id="projects">📁 Projects</div>
       <div class="row g-3">
+
         <div class="col-md-12">
           <div class="p-3 border rounded bg-light">
             <strong>Hansa Logistics</strong><br>
             A smart logistics solution for streamlined delivery and operations.
           </div>
         </div>
+
         <div class="col-md-12">
             <div class="p-3 border rounded bg-light">
                 <div class="row">
@@ -129,6 +131,21 @@
                 </div>
             </div>
           </div>
+
+          <div class="col-md-12">
+            <div class="p-3 border rounded bg-light">
+                <div class="row">
+                    <strong>Location based Blood donation system</strong><br>
+                    <div class="col-10"> 
+                        A android app that helps to find blood donors and recipients based on location.
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://github.com/stharnav/Location-Based-Blood-Donation-App'"><i class="bi bi-github"></i> GitHub</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
       </div>
     </div>
 
@@ -160,6 +177,9 @@
           <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://github.com/stharnav'"><i class="bi bi-github"></i> GitHub</button>
         </div>
         <div class="col-sm-6 col-md-4">
+          <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://gitlab.com/arnavshrestha44'"><i class="bi bi-github"></i> GitLab</button>
+        </div>
+        <div class="col-sm-6 col-md-4">
           <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://amberco.itch.io/'"><i class="bi bi-controller"></i> Itch.io</button>
         </div>
       </div>
@@ -172,11 +192,17 @@
 
   <script>
     function sendEmail() {
-      window.location.href = "mailto:arnav@example.com";
-    }
-    function lang() {
-      alert("Language switch feature coming soon.");
-    }
+      const email = "mail@arnavstha.com.np";
+      const subject = "";
+      const body = "";
+
+      const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      window.location.href = mailtoLink;
+
+        }
+        function lang() {
+          alert("Language switch feature coming soon.");
+        }
   </script>
 </body>
 </html>
