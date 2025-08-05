@@ -79,26 +79,26 @@
   <div class="container py-5">
     <div class="profile-header mx-auto mb-4 col-md-8">
       <!-- <img src="https://via.placeholder.com/120" alt="Profile" class="profile-pic"> -->
-      <div class="profile-name">Arnav Shrestha</div>
+      <div class="profile-name" id="name">Arnav Shrestha</div>
       <div class="profile-title">Junior Software Engineer | Developer & Designer</div>
-      <p class="mt-3 text-muted">
+      <p class="mt-3 text-muted" id="description">
         I'm an IT student balancing studies and a junior dev role. Passionate about real-world problem solving through technology and design.
       </p>
       <div class="action-buttons">
         <button class="btn btn-primary" onclick="sendEmail()"><i class="bi bi-envelope"></i> Hire Me</button>
-        <button class="btn btn-outline-secondary" onclick="window.location.href='https://www.instagram.com/stha_anav/'"><i class="bi bi-person-plus"></i> Follow</button>
+        <button class="btn btn-outline-secondary" onclick="window.location.href='https://www.linkedin.com/in/arnav-shrestha-5bba61239/'"><i class="bi bi-person-plus"></i> Follow</button>
       </div>
       
       <!-- Section Navigation -->
       <ul class="nav justify-content-center section-nav">
         <li class="nav-item">
-          <a class="nav-link" href="#projects">Projects</a>
+          <a class="nav-link" href="#projects" id="project">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#games">Games</a>
+          <a class="nav-link" href="#games" id="game">Games</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#social">Social</a>
+          <a class="nav-link" href="#socials" id="social">Social</a>
         </li>
       </ul>
       
@@ -119,7 +119,7 @@
             <div class="p-3 border rounded bg-light">
                 <div class="row">
                     <strong>Vega Business</strong><br>
-                    <div class="col-8"> 
+                    <div class="col-md-8"> 
                         A web-based application for managing and tracking your business operations.
                     </div>
                     <div class="col">
@@ -135,12 +135,26 @@
           <div class="col-md-12">
             <div class="p-3 border rounded bg-light">
                 <div class="row">
-                    <strong>Location based Blood donation system</strong><br>
+                    <strong>Blood donation App</strong><br>
                     <div class="col-10"> 
                         A android app that helps to find blood donors and recipients based on location.
                     </div>
                     <div class="col">
                         <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://github.com/stharnav/Location-Based-Blood-Donation-App'"><i class="bi bi-github"></i> GitHub</button>
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <div class="p-3 border rounded bg-light">
+                <div class="row">
+                    <strong>Location based Disaster Alert system</strong><br>
+                    <div class="col-10"> 
+                        A android app that alerts you about potential disaster based on location.
+                    </div>
+                    <div class="col">
+                        <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://github.com/stharnav/Alert-System'"><i class="bi bi-github"></i> GitHub</button>
                     </div>
                 </div>
             </div>
@@ -162,13 +176,13 @@
     </div>
 
     <div class="card-section col-md-8 mx-auto">
-      <div class="section-title" id="social">🔗 Social Links</div>
+      <div class="section-title" id="socials">🔗 Social Links</div>
       <div class="row g-2">
         <div class="col-sm-6 col-md-4">
           <button class="btn btn-outline-primary w-100" onclick="sendEmail()"><i class="bi bi-envelope"></i> Email</button>
         </div>
         <div class="col-sm-6 col-md-4">
-          <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://www.linkedin.com/'"><i class="bi bi-linkedin"></i> LinkedIn</button>
+          <button class="btn btn-outline-primary w-100" onclick="window.location.href='https://www.linkedin.com/in/arnav-shrestha-5bba61239/'"><i class="bi bi-linkedin"></i> LinkedIn</button>
         </div>
         <div class="col-sm-6 col-md-4">
           <button class="btn btn-outline-danger w-100" onclick="window.location.href='https://www.instagram.com/stha_anav/'"><i class="bi bi-instagram"></i> Instagram</button>
@@ -177,7 +191,7 @@
           <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://github.com/stharnav'"><i class="bi bi-github"></i> GitHub</button>
         </div>
         <div class="col-sm-6 col-md-4">
-          <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://gitlab.com/arnavshrestha44'"><i class="bi bi-github"></i> GitLab</button>
+          <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://gitlab.com/arnavshrestha44'"><i class="bi bi-gitlab"></i> GitLab</button>
         </div>
         <div class="col-sm-6 col-md-4">
           <button class="btn btn-outline-dark w-100" onclick="window.location.href='https://amberco.itch.io/'"><i class="bi bi-controller"></i> Itch.io</button>
@@ -186,7 +200,12 @@
     </div>
 
     <div class="text-center text-muted mt-4">
-      &copy; 2025 Arnav Shrestha | <button onclick="lang()" class="btn btn-link btn-sm text-decoration-none">Change Language</button>
+      &copy; 2025 Arnav Shrestha &nbsp;
+      <select id="languageSelector" class="form-select form-select-sm d-inline-block w-auto" onchange="setLanguage(this.value)">
+        <option value="en">English</option>
+        <option value="np">नेपाली</option>
+        <option value="jp">日本語</option>
+      </select>
     </div>
   </div>
 
@@ -204,5 +223,6 @@
           alert("Language switch feature coming soon.");
         }
   </script>
+  <script src="scripts/lang.js"></script>
 </body>
 </html>
