@@ -35,7 +35,7 @@ function setLanguage(lang) {
     document.getElementById('name').innerHTML = translations[lang].name;
     document.getElementById('description').innerText = translations[lang].description;
     document.getElementById('project').innerText = translations[lang].project;
-    document.getElementById('projects').innerText = translations[lang].projects;
+    document.getElementById('p').innerText = translations[lang].projects;
     document.getElementById('game').innerText = translations[lang].game;
     document.getElementById('games').innerText = translations[lang].games;
     document.getElementById('socials').innerText = translations[lang].socials;

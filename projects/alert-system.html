@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alert System Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 text-gray-800">
+  <!-- Header like Google Play -->
+  <header class="bg-white shadow sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 py-5 flex items-center gap-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" alt="App Icon" class="w-16 h-16 rounded-lg">
+      <div>
+        <h1 class="text-2xl font-bold">Alert System</h1>
+        <p class="text-sm text-gray-500">Emergency Alert & Notification Project</p>
+        <div class="flex items-center gap-2 mt-1 text-yellow-500">
+          ⭐⭐⭐⭐☆ <span class="text-gray-600 text-sm">(4.0) GPA</span>
+        </div>
+      </div>
+      <div class="ml-auto">
+        <a href="https://github.com/stharnav/Alert-System" target="_blank" class="px-6 py-2 bg-green-600 text-white rounded-lg shadow hover:bg-green-700">Install</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto px-4 py-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+    <!-- Left/Main Section -->
+    <div class="lg:col-span-2 space-y-6">
+      <!-- Preview Images -->
+      <section class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="bg-gray-200 h-64 flex items-center justify-center rounded">Screenshot 1</div>
+        <div class="bg-gray-200 h-64 flex items-center justify-center rounded">Screenshot 2</div>
+        <div class="bg-gray-200 h-64 flex items-center justify-center rounded">Screenshot 3</div>
+      </section>
+
+      <!-- About the App -->
+      <section>
+        <h2 class="text-xl font-semibold mb-2">About this project</h2>
+        <p class="text-gray-700 mb-4">
+          Alert System is a cross-platform emergency notification project built using <strong>Android (Java)</strong>, <strong>Laravel</strong>, and <strong>Firebase</strong>. 
+          It allows admins to send alerts to users within a selected geographical radius using the <strong>Haversine formula</strong> for accurate distance calculation.
+        </p>
+      </section>
+
+      <!-- Key Features -->
+      <section class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-4">Key Features</h2>
+        <div class="space-y-4">
+          <div class="border-b pb-3">
+            <p class="font-bold">⭐ Anonymous Login</p>
+            <p class="text-sm text-gray-600">Users sign in anonymously using Firebase Authentication for privacy.</p>
+          </div>
+          <div class="border-b pb-3">
+            <p class="font-bold">⭐ Real-time Location Tracking</p>
+            <p class="text-sm text-gray-600">User location data stored securely in Firebase Firestore.</p>
+          </div>
+          <div class="border-b pb-3">
+            <p class="font-bold">⭐ Admin Dashboard</p>
+            <p class="text-sm text-gray-600">Responsive web UI with map and radius selector to send alerts.</p>
+          </div>
+          <div class="border-b pb-3">
+            <p class="font-bold">⭐ Haversine Formula</p>
+            <p class="text-sm text-gray-600">Accurate distance calculations between user and alert center.</p>
+          </div>
+          <div>
+            <p class="font-bold">⭐ Push Notifications</p>
+            <p class="text-sm text-gray-600">Alerts delivered instantly via Firebase Cloud Messaging (FCM).</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Architecture Diagram -->
+      <section class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow">
+        <h2 class="text-xl font-semibold mb-4 text-gray-900 dark:text-gray-100">System Architecture</h2>
+        
+        <!-- <div class="bg-gray-200 dark:bg-gray-700 h-72 flex items-center justify-center rounded">
+          <span class="text-gray-500 dark:text-gray-400">[ Architecture Diagram Placeholder ]</span>
+        </div> -->
+        
+        <p class="text-gray-600 dark:text-gray-300 text-sm mt-2">
+          Architecture includes Android App (Java), Laravel Backend, Firebase (Auth + Firestore), and FCM for push notifications.
+        </p>
+
+        <!-- Download PDF Button -->
+        <div class="mt-4">
+          <a href="architecture.pdf" download
+            class="inline-flex items-center px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-lg shadow hover:bg-blue-700">
+            Download Architecture PDF
+          </a>
+        </div>
+      </section>
+
+
+      <!-- Technical Details -->
+      <section>
+        <h2 class="text-xl font-semibold mb-4">Technical Details</h2>
+        <ul class="list-disc pl-6 space-y-1 text-gray-700">
+          <li><strong>Frontend:</strong> TailwindCSS, GitHub Pages</li>
+          <li><strong>Backend:</strong> Laravel</li>
+          <li><strong>Mobile:</strong> Android (Java)</li>
+          <li><strong>Database:</strong> Firebase Firestore</li>
+          <li><strong>Notifications:</strong> Firebase Cloud Messaging (FCM)</li>
+        </ul>
+      </section>
+    </div>
+
+    <!-- Right Section (More Apps) -->
+    <aside class="space-y-6">
+      <section class="bg-white p-4 rounded-lg shadow">
+        <h3 class="font-semibold text-lg mb-4">More Projects</h3>
+        <!-- <div class="space-y-4">
+          <div class="flex gap-3 items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png" class="w-12 h-12 rounded-lg">
+            <div>
+              <p class="font-semibold">Disaster Connect</p>
+              <p class="text-xs text-gray-500">Report & share disaster updates</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" class="w-12 h-12 rounded-lg">
+            <div>
+              <p class="font-semibold">Volunteer Hub</p>
+              <p class="text-xs text-gray-500">Connect with registered volunteers</p>
+            </div>
+          </div>
+          <div class="flex gap-3 items-center">
+            <img src="https://cdn-icons-png.flaticon.com/512/3649/3649460.png" class="w-12 h-12 rounded-lg">
+            <div>
+              <p class="font-semibold">Food Recommender</p>
+              <p class="text-xs text-gray-500">Suggest meals by mood & weather</p>
+            </div>
+          </div>
+        </div> -->
+      </section>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6 mt-10">
+    <div class="max-w-7xl mx-auto px-4 text-center">
+      <p class="text-sm">&copy; 2025 Alert System Project | Academic Showcase</p>
+    </div>
+  </footer>
+</body>
+</html>
