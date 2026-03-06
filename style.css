@@ -8,24 +8,35 @@
       transition: all 0.3s ease;
     }
 
-    .link i {
-      font-size: 20px;
-      color:aliceblue;
+    .link{
+      cursor: pointer;
+      background-color: white;
+    }
+
+    .link:hover {
+      box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+      transform: scale(1.01);
+      transition: all 0.1s ease;
+    }
+
+    .link i{
+      font-size: 24px;
     }
 
     .icon-btn:hover {
-      color: white;
+      color: rgb(114, 114, 114);
     }
 
     .icon-btn:hover i {
       transform: scale(1.2);
     }
     body{
-      background: rgb(228, 228, 228);
+      background: #F9FAFB;
       font-family: "Poppins", sans-serif;
       font-weight: 400;
       font-style: normal;
     }
+
     h1{
       font-family: "Poppins", sans-serif;
       font-weight: 200;
